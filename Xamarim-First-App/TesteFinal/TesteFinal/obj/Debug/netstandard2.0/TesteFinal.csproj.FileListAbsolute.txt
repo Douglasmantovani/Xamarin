@@ -1,0 +1,16 @@
+C:\Users\senai\Desktop\TesteFinal\TesteFinal\TesteFinal\obj\Debug\netstandard2.0\TesteFinal.csprojAssemblyReference.cache
+C:\Users\senai\Desktop\TesteFinal\TesteFinal\TesteFinal\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\senai\Desktop\TesteFinal\TesteFinal\TesteFinal\obj\Debug\netstandard2.0\CadastroPage.xaml.g.cs
+C:\Users\senai\Desktop\TesteFinal\TesteFinal\TesteFinal\obj\Debug\netstandard2.0\EditarPage.xaml.g.cs
+C:\Users\senai\Desktop\TesteFinal\TesteFinal\TesteFinal\obj\Debug\netstandard2.0\LoginPage.xaml.g.cs
+C:\Users\senai\Desktop\TesteFinal\TesteFinal\TesteFinal\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\senai\Desktop\TesteFinal\TesteFinal\TesteFinal\obj\Debug\netstandard2.0\TesteFinal.csproj.CoreCompileInputs.cache
+C:\Users\senai\Desktop\TesteFinal\TesteFinal\TesteFinal\obj\Debug\netstandard2.0\TesteFinal.AssemblyInfoInputs.cache
+C:\Users\senai\Desktop\TesteFinal\TesteFinal\TesteFinal\obj\Debug\netstandard2.0\TesteFinal.AssemblyInfo.cs
+C:\Users\senai\Desktop\TesteFinal\TesteFinal\TesteFinal\bin\Debug\netstandard2.0\TesteFinal.deps.json
+C:\Users\senai\Desktop\TesteFinal\TesteFinal\TesteFinal\bin\Debug\netstandard2.0\TesteFinal.dll
+C:\Users\senai\Desktop\TesteFinal\TesteFinal\TesteFinal\bin\Debug\netstandard2.0\TesteFinal.pdb
+C:\Users\senai\Desktop\TesteFinal\TesteFinal\TesteFinal\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\senai\Desktop\TesteFinal\TesteFinal\TesteFinal\obj\Debug\netstandard2.0\TesteFinal.dll
+C:\Users\senai\Desktop\TesteFinal\TesteFinal\TesteFinal\obj\Debug\netstandard2.0\TesteFinal.pdb
+C:\Users\senai\Desktop\TesteFinal\TesteFinal\TesteFinal\obj\Debug\netstandard2.0\PerfilPage.xaml.g.cs

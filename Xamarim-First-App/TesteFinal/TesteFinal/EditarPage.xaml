@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TesteFinal.EditarPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Email"></Label>
+            <Entry x:Name="lbEmail"></Entry>
+
+            <Label Text="Telefone"></Label>
+            <Entry x:Name="lbTelefone"></Entry>
+
+            <Label Text="Nome"></Label>
+            <Entry x:Name="lbNome"></Entry>
+
+            <Button Text="Cadastrar" 
+                    Clicked="OnClicked_Editar"/>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

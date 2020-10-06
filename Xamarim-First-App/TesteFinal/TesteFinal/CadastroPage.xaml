@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TesteFinal.CadastroPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Nome"></Label>
+            <Entry x:Name="lbNome"></Entry>
+            
+            <Label Text="Email"></Label>
+            <Entry x:Name="lbEmail"></Entry>
+
+            <Label Text="Senha"></Label>
+            <Entry x:Name="lbSenha"></Entry>
+            
+            <Label Text="Telefone"></Label>
+            <Entry x:Name="lbTelefone"></Entry>
+
+            <Button Text="Login" 
+                    Clicked="OnClicked_Login"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
