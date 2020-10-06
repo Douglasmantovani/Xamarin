@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             xmlns:local="clr-namespace:CampeonatoApp"
+             x:Class="CampeonatoApp.Views.Cadastro">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="AliceBlue">
+
+            <StackLayout 
+                HorizontalOptions="Center"
+                VerticalOptions="Start"
+                Margin="0,40,0,0">
+                <Image 
+                    Source="{local:ImageResource Campeonato_App.Resources.Icons.baseline_person_black_48dp.png}"
+                    HeightRequest="100"
+                    WidthRequest="100"
+                />
+            </StackLayout>
+
+            <StackLayout
+                VerticalOptions="CenterAndExpand"
+                HorizontalOptions="CenterAndExpand">
+                <Grid Grid.Row="1" Grid.Column="1" Padding="25,0,25,0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="50"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Image 
+                        Grid.Column="0" 
+                        Source="{local:ImageResource Campeonato_App.Resources.Icons.baseline_person_black_48dp.png}"
+                        HorizontalOptions="Start"                               
+                    />
+                    <Entry  
+                        Grid.Column="0"
+                        Grid.ColumnSpan="2"
+                        HorizontalTextAlignment="Center"
+                        Placeholder="Nome*"
+                    />
+
+                </Grid>
+
+                <Grid Grid.Row="1" Grid.Column="1" Padding="25,0,25,0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="50"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Image 
+                        Grid.Column="0" 
+                        Source="{local:ImageResource Campeonato_App.Resources.Icons.baseline_person_black_48dp.png}"
+                        HorizontalOptions="Start"
+                    />
+                    <Entry  
+                        Grid.Column="0"
+                        Grid.ColumnSpan="2"
+                        HorizontalTextAlignment="Center"
+                        Placeholder="Apelido*"
+                    />
+                </Grid>
+
+                <Grid Grid.Row="1" Grid.Column="1" Padding="25,0,25,0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="50"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Image 
+                        Grid.Column="0" 
+                        Source="{local:ImageResource Campeonato_App.Resources.Icons.baseline_email_black_48dp.png}"
+                        HorizontalOptions="Start"
+                    />
+                    <Entry  
+                        Grid.Column="0"
+                        Grid.ColumnSpan="2"
+                        HorizontalTextAlignment="Center"
+                        Placeholder="Email*"
+                    />
+                </Grid>
+
+                <Grid Grid.Row="1" Grid.Column="1" Padding="25,0,25,0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="50"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Image 
+                        Grid.Column="0" 
+                        Source="{local:ImageResource Campeonato_App.Resources.Icons.baseline_lock_black_48dp.png}"
+                        HorizontalOptions="Start"
+                    />
+                    <Entry  
+                        Grid.Column="0"
+                        Grid.ColumnSpan="2"
+                        HorizontalTextAlignment="Center"
+                        Placeholder="Senha*"
+                    />
+                </Grid>
+
+                <Button 
+                    Text="Cadastre-se"
+                    BackgroundColor="#2ECC71"
+                    FontSize="Large"
+                    VerticalOptions="CenterAndExpand"
+                    HorizontalOptions="CenterAndExpand"
+                    WidthRequest="250"
+                    CornerRadius="10"
+                />
+            </StackLayout>
+
+            <StackLayout
+                VerticalOptions="End"
+                HorizontalOptions="CenterAndExpand">
+                <Label
+                    FontSize="20">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="Login" 
+                                  TextColor="#2980B9" 
+                                  TextDecorations="Underline">
+                                <Span.GestureRecognizers>
+                                    <TapGestureRecognizer 
+                                        Command="{Binding TapCommand}"
+                                        CommandParameter="#"/>
+                                </Span.GestureRecognizers>
+                            </Span>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+            </StackLayout>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

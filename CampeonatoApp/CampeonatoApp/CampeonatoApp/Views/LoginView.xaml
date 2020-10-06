@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="CampeonatoApp.Views.LoginView">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout Orientation="Vertical" VerticalOptions="FillAndExpand"  Margin="20,50">
+                <Image Source="app_logo.png"
+                   WidthRequest="{OnPlatform Android=250}"
+                   HorizontalOptions="Center"/>
+                <StackLayout VerticalOptions="CenterAndExpand">
+                    <Grid Margin="10,35,10,20">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="0.01*" />
+                            <ColumnDefinition Width="0.1*" />
+                            <ColumnDefinition Width="0.1"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions  >
+                            <RowDefinition Height="50" />
+                            <RowDefinition Height="50" />
+                        </Grid.RowDefinitions >
+                        <Image Source="baseline_person_black_48dp.png" WidthRequest="30" />
+                        <Entry Grid.Column="1" Placeholder="Usuário ou Email" PlaceholderColor="Black"/>
+                        <Image Grid.Row="1" Source="baseline_lock_black_48dp.png" HeightRequest="30" />
+                        <Entry Grid.Row="1" Grid.Column="1" Placeholder="Senha" IsPassword="True" PlaceholderColor="Black"/>
+                    </Grid>
+                    <Button Text="Entrar" FontSize="22" Margin="50,5,50,5"
+                        HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"  WidthRequest="205" HeightRequest="65"
+                        CornerRadius="12"  TextColor="White" BackgroundColor="#2ecc71"/>
+                </StackLayout>
+
+                <Button Text="Cadastre-se" HorizontalOptions="Center" VerticalOptions="EndAndExpand" 
+                   FontSize="18.5" TextColor="#2980b9" BackgroundColor="Transparent" />
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

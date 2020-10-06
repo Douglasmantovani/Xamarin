@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="WSTowerApp.App">
+    <Application.Resources>
+        <Color x:Key="azul">#2881b9</Color>
+        <Color x:Key="verde">#2fcb71</Color>
+        <Color x:Key="cinzento">#818181</Color>
+        <Color x:Key="fontColorA">Black</Color>
+        <Color x:Key="fontColorB">White</Color>
+
+        <Style x:Key="lbTextos" TargetType="Label">
+            <Setter Property="FontFamily" Value="Exo"/>
+            <Setter Property="FontSize" Value="20"/>
+            <Setter Property="TextColor" Value="{StaticResource fontColorA}"/>
+        </Style>
+       
+         <Style x:Key="btnPadrao" TargetType="Button">
+            <Setter Property="HorizontalOptions" Value="CenterAndExpand"/>
+            <Setter Property="WidthRequest" Value="256"/>
+            <Setter Property="HeightRequest" Value="37"/>
+            <Setter Property="FontFamily" Value="Roboto"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="TextColor" Value="{StaticResource fontColorB}"/>
+        </Style>
+    </Application.Resources>
+</Application>

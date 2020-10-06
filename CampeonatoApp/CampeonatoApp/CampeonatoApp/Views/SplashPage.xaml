@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="CampeonatoApp.Views.SplashPage">
+    <ContentPage.Content>
+        <StackLayout>
+
+            <Image
+                Source="logo.png"
+                WidthRequest = "200"
+                HeightRequest="200"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+            />
+            <Label Text="Campeonato mundial FIFA 2020!" FontSize="Medium" FontAttributes="Italic" 
+           HorizontalOptions="Center"
+           VerticalOptions="CenterAndExpand" />
+
+            <FlexLayout
+                Direction="Row"
+                AlignItems="Center"
+                JustifyContent="SpaceEvenly"
+             >
+                <Label Text="Realização" FontSize="Large" FontAttributes="Italic"
+           HorizontalOptions="Center"
+           VerticalOptions="CenterAndExpand" />
+
+                <Label Text="Apoio" FontSize="Large" FontAttributes="Italic"
+           HorizontalOptions="Center"
+           VerticalOptions="CenterAndExpand" />
+            </FlexLayout>
+
+            <FlexLayout
+                Direction="Row"
+                AlignItems="Center"
+                JustifyContent="SpaceEvenly">
+
+                <Image
+                Source="Flag.png"
+                WidthRequest = "100"
+                HeightRequest="100"
+                HorizontalOptions="EndAndExpand"
+                VerticalOptions="Center"               
+            />
+
+                <Image
+                Source="WS_Towers.png"
+                WidthRequest = "115"
+                HeightRequest="150"
+                HorizontalOptions="EndAndExpand"
+                VerticalOptions="Center"  />
+
+            </FlexLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
