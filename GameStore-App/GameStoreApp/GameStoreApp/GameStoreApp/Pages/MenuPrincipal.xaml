@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Title="MenuPrincipal"
+             x:Class="GameStoreApp.Pages.MenuPrincipal"
+             BackgroundColor="#F5F5F5">
+    <StackLayout>
+        <StackLayout Margin="45,107,45,0">
+            <StackLayout Padding="10">
+                <Frame CornerRadius="100" 
+    Padding="0"
+    IsClippedToBounds="True">
+                    <Image Source="Logoames.jpg" 
+     HorizontalOptions="Center"
+    VerticalOptions="Center" />
+                </Frame>
+            </StackLayout>
+        </StackLayout>
+        <Button Text="Perfil" Clicked="Button_ClickedPerfil"></Button>
+    </StackLayout>
+</ContentPage>

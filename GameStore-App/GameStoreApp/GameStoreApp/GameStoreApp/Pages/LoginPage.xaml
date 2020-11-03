@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GameStoreApp.Pages.LoginPage"
+             BackgroundColor="#3F3E3E">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Margin="45,107,45,0">
+
+                <StackLayout Padding="10">
+                    <Frame CornerRadius="100" 
+               Padding="0"
+               IsClippedToBounds="True">
+                        <Image Source="Logoames.jpg" 
+               HorizontalOptions="Center"
+               VerticalOptions="Center" />
+                    </Frame>
+                </StackLayout>
+
+                <StackLayout Margin="0,80,0,0">
+                    <Entry Text="{Binding Email}" TextColor="White" Placeholder="Digite o seu E-mail aqui" x:Name="lbEmail" PlaceholderColor="White"  />
+
+                    <Entry Text="{Binding Senha}" TextColor="White" Placeholder="Digite sua Senha aqui" IsPassword="True" x:Name="lbSenha" PlaceholderColor="White"/>
+                </StackLayout>
+
+                <StackLayout Margin="0,29,0,0">
+                    <Button Text="Login" Clicked="Button_ClickedLogin"></Button>
+
+                    <Button Text="Esqueceu a Senha?"  
+                        BackgroundColor="Transparent"
+                        TextColor="White"
+                        Margin="0,20" 
+                        FontAttributes="Bold"/>
+                </StackLayout>
+
+                <StackLayout  >
+                    <Button Text="Cadastrar" Clicked="Button_Clicked"></Button>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GameStoreApp.Pages.CadastroPage"
+             BackgroundColor="#3F3E3E">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Margin="45,107,45,0">
+                <StackLayout Padding="10">
+                    <Frame CornerRadius="100" 
+               Padding="0"
+               IsClippedToBounds="True">
+                        <Image Source="Logoames.jpg" 
+               HorizontalOptions="Center"
+               VerticalOptions="Center" />
+                    </Frame>
+                </StackLayout>
+
+                <StackLayout Margin="0,36,0,0">
+                    <Label 
+                     Text="Cadastro" 
+                     HorizontalOptions="CenterAndExpand" 
+                     TextColor="White"
+                     FontSize="40"/>
+                </StackLayout>
+
+                <StackLayout Margin="0,80,0,0">
+                    <Entry Keyboard="Text" Text="{Binding NomeUsuario}" TextColor="White" Placeholder="Digite o seu nome aqui"  PlaceholderColor="White"  />
+                    <Entry Keyboard="Email" Text="{Binding Email}" TextColor="White" Placeholder="Digite o seu e-mail aqui" PlaceholderColor="White" />
+                    <Entry Keyboard="Telephone" Text="{Binding Telefone}" TextColor="White" Placeholder="Digite o seu telefone aqui"  PlaceholderColor="White" />
+                    <Entry TextColor="White" Text="{Binding Senha}" Placeholder="Digite o seu senha aqui"  IsPassword="True" PlaceholderColor="White" />
+                </StackLayout>
+
+                <StackLayout Margin="0,29,0,0">
+                    <Button TextColor="White" Text="Cadastrar" 
+                     BackgroundColor="#212121"/>
+                </StackLayout>
+            </StackLayout>
+            </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GameStoreApp.Pages.PrincipalPage"
+             Title="Principal"
+             BackgroundColor="#3F3E3E">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <ListView
+        ItemsSource="{Binding Jogos}"
+        HasUnevenRows="true">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <StackLayout>
+                                    <StackLayout Orientation="Horizontal" BackgroundColor="#1B1B1B" >
+                                        <Image Source="{Binding Caminho}"  
+                        Aspect="Fill"
+                 HeightRequest="150"
+                 WidthRequest="140"/>
+                                        <StackLayout Orientation="Vertical">
+                                            <Label x:Name="lbTituloJogo" Text="{Binding TituloJogo}" TextColor="White" FontSize="25"></Label>
+                                            <Label></Label>
+                                            <StackLayout Orientation="Horizontal" Spacing="50">
+                                                <Label Text="{Binding Valor}" FontSize="30" TextColor="White"></Label>
+                                                <Image Source="carrinho.png" 
+                        HeightRequest="50"                      
+                         WidthRequest="45" />
+                                            </StackLayout>
+                                        </StackLayout>
+                                    </StackLayout>
+                                    <Label></Label>
+                                </StackLayout>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
